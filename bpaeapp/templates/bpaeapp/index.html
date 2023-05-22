@@ -1,0 +1,647 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>PAETIN</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="{% static 'assets/images/fav-icon/icon.png' %}">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css" media="all" />
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" type="text/css" media="all" />
+	<!-- nivo-slider CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/nivo-slider.css' %}" type="text/css" media="all" />
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" type="text/css" media="all" />
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/animated-text.css' %}" type="text/css" media="all" />
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}" type="text/css" media="all" />
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}" type="text/css" media="all" />
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/theme-default.css' %}" type="text/css" media="all" />
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}" type="text/css" media="all" />
+	<!-- Main Style CSS -->
+	<link rel="stylesheet"  href="{% static 'style.css' %}" type="text/css" media="all" />
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}" type="text/css" media="all" />
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="{% static 'venobox/venobox.css' %}" type="text/css" media="all" />
+	<!-- widget CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/widget.css' %}" type="text/css" media="all" />
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css" media="all" />
+	<!-- slick slider CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}" type="text/css" media="screen" />
+    <!-- slick slider CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}" type="text/css" media="screen" />
+</head>
+<body>
+
+<!-- loder -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+
+
+<!--==================================================-->
+<!-- Start techno Main Menu Area -->
+<!--==================================================-->
+<div id="sticky-header" class="techno_nav_manu style-two">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-3">
+				<div class="logo">
+					<a class="logo_img" href="{% url 'home' %}" title="PAETIN">
+						<img src="{% static 'assets/images/logoo.png' %}" alt="" />
+					</a>
+					<a class="main_sticky" href="{% url 'home' %}" title="PAETIN">
+						<img src="{% static 'assets/images/logo.png' %}" alt="astute" />
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<nav class="techno_menu text-center">
+					<ul class="nav_scroll">
+
+
+						<li class="nav-item active">
+                  		<a class="nav-link" href="{% url 'index' %}"> Home <span class="sr-only">(current)</span></a>
+                		</li>
+
+						<li><a href="#Company">Company <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub-menu">
+								<li><a href="{% url 'mission' %}">Mission & Vission</a></li>
+								<li><a href="{% url 'contact' %}">Contact Us</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{% url 'service' %} ">Services </a>
+						</li>
+
+					</ul>
+
+					<div class="slider-button-text">
+
+					</div>
+				</nav>
+			</div>
+			<div class="lines style-three">
+				<div class="line"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- techno Mobile Menu Area -->
+<div class="mobile-menu-area d-sm-block d-md-block d-lg-none ">
+	<div class="mobile-menu">
+		<nav class="techno_menu">
+			<ul class="nav_scroll">
+
+
+
+				<li class="nav-item active">
+                  		<a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
+                		</li>
+
+						<li><a href="#Company">Company <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub-menu">
+								<li><a href="{% url 'mission' %}">Mission & Vission</a></li>
+								<li><a href="{% url 'contact' %}">Contact Us</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{% url 'service' %} ">Services </a>
+						</li>
+
+
+			</ul>
+		</nav>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End techno Main Menu Area -->
+<!--==================================================-->
+
+<!-- Start techno Sidebar Cart Item -->
+<div class="xs-sidebar-group info-group">
+	<div class="xs-overlay xs-bg-black"></div>
+	<div class="xs-sidebar-widget">
+		<div class="sidebar-widget-container">
+			<div class="widget-heading">
+				<a href="#" class="close-side-widget">
+					<i class="far fa-times-circle"></i>
+				</a>
+			</div>
+			<div class="sidebar-textwidget">
+				<!-- Sidebar Info Content -->
+				<div class="sidebar-info-contents">
+					<div class="content-inner">
+						<div class="nav-logo">
+							<a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt="" /></a>
+						</div>
+						<div class="content-box">
+							<h2>About Us</h2>
+							<p class="text">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+							<a href="index-8.html" class="theme-btn btn-style-two"><span>Consultation</span> <i class="fas fa-heart"></i></a>
+						</div>
+						<div class="contact-info">
+							<h2>Contact Info</h2>
+							<ul class="list-style-one">
+								<li><span class="icon flaticon-email"></span>Chicago 12, Melborne City, USA</li>
+								<li><span class="flaticon-phone-call"></span>(+001) 123-456-7890</li>
+								<li><span class="icon flaticon-placeholder-1"></span>Example.com</li>
+								<li><span class="flaticon-clock-2"></span>Week Days: 09.00 to 18.00 Sunday: Closed</li>
+							</ul>
+						</div>
+						<!-- Social Box -->
+						<ul class="social-box">
+							<li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+							<li class="twitter"><a href="#" class="fab fa-instagram"></a></li>
+							<li class="linkedin"><a href="#" class="fab fa-twitter"></a></li>
+							<li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li>
+							<li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End techno Sidebar Cart Item -->
+
+<!--==================================================-->
+<!-- Start techno slider Area -->
+<!--==================================================-->
+<div class="slider_list2 owl-carousel" id="home">
+	<div class="slider-area slider4 d-flex align-items-center">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<div class="slider-content2">
+						<h4>WELCOME TO PAETIN software Inc.</h4>
+						<h1>where innovation  </h1>
+						<h1>meets <span class="color2">excellence</span></h1>
+						<div class="slider-button2">
+							<a href="{% url 'service' %}">DISCOVER MORE<i class="fas fa-check-square"></i></a>
+						</div>
+					</div>
+				 </div>
+				 <div class="slider-socail-icon2">
+				 	<a href="#">LINKEDIN</a>
+				 	<a href="#">TWITTER</a>
+				 	<a href="#">FACEBOOK</a>
+			 	</div>
+			 	<div class="slider-shape-thumb">
+			 		<div class="slider-shape-thumb-inner">
+			 			<img src="{% static 'assets/images/slider/shape-2.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner1">
+			 			<img src="{% static 'assets/images/slider/shape-1.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner2 rotateme">
+			 			<img src="{% static 'assets/images/slider/round3.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner3">
+			 			<img src="{% static 'assets/images/slider/line.png' %}" alt="">
+			 		</div>
+			 	</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-area slider5 d-flex align-items-center">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<div class="slider-content2">
+						<h4> // PAETIN SOFTWARE INC. </h4>
+						<h1>we blend creativity </h1>
+						<h1>and cutting-edge technology</h1>
+						<div class="slider-button2">
+							<a href="{% url 'service' %}">DISCOVER MORE<i class="fas fa-check-square"></i></a>
+						</div>
+					</div>
+				 </div>
+				 <div class="slider-socail-icon2">
+				 	<a href="#">LINKEDIN</a>
+				 	<a href="#">TWITTER</a>
+				 	<a href="#">FACEBOOK</a>
+			 	</div>
+			 	<div class="slider-shape-thumb">
+			 		<div class="slider-shape-thumb-inner">
+			 			<img src="{% static 'assets/images/slider/shape-2.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner1">
+			 			<img src="{% static 'assets/images/slider/shape-1.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner2 rotateme">
+			 			<img src="{% static 'assets/images/slider/round3.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner3">
+			 			<img src="{% static 'assets/images/slider/line.png' %}" alt="">
+			 		</div>
+			 	</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-area slider6 d-flex align-items-center">
+		<div class="container">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-12 col-md-6 col-sm-12">
+					<div class="slider-content2">
+						<h4>PAETIN SOFTWARE INC.</h4>
+						<h1> the epitome of </h1>
+						<h1>Design <span class="color2">excellence</span></h1>
+						<div class="slider-button2">
+							<a href="{% url 'service' %}">DISCOVER MORE<i class="fas fa-check-square"></i></a>
+						</div>
+					</div>
+				 </div>
+				 <div class="slider-socail-icon2">
+				 	<a href="#">LINKEDIN</a>
+				 	<a href="#">TWITTER</a>
+				 	<a href="#">FACEBOOK</a>
+			 	</div>
+			 	<div class="slider-shape-thumb">
+			 		<div class="slider-shape-thumb-inner">
+			 			<img src="{% static 'assets/images/slider/shape-2.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner1">
+			 			<img src="{% static 'assets/images/slider/shape-1.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner2 rotateme">
+			 			<img src="{% static 'assets/images/slider/round3.png' %}" alt="">
+			 		</div>
+			 		<div class="slider-shape-thumb-inner3">
+			 			<img src="{% static 'assets/images/slider/line.png' %}" alt="">
+			 		</div>
+			 	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End techno slider Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start techno service Area -->
+<!--==================================================-->
+<div class="service-area style-three upper5" id="service">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="dreamit-section-title style-four text-left white pb-3">
+					<h5>SERVICES</h5>
+					<h1>Premier digital agency excelling in </h1>
+					<h1>web and mobile app <span class="color1">development</span></h1>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="section-text white">
+					<p>Our talented team of experts is dedicated to creating stunning digital experiences that elevate your brand and drive exceptional results. With innovative solutions, attention to detail, and a customer-centric approach, we transform your vision into reality. Partner with us to unleash the power of
+						technology and take your business to new heights.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="techno-sinlge-service-box white">
+					<div class="techno-service-box-inner">
+						<div class="techno-service-content">
+							<div class="techno-service-icon">
+								<i class="flaticon-brain-1"></i>
+							</div>
+							<div class="techno-service-title">
+								<h2>DIGITAL SEO CONSULTANCY</h2>
+								<p>Unlock your website's true potential with Paetin Inc.'s expert Digital SEO Consultancy. Our team of seasoned professionals is dedicated to optimizing your
+									online presence and driving targeted traffic to your website..</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="techno-sinlge-service-box white">
+					<div class="techno-service-box-inner">
+						<div class="techno-service-content">
+							<div class="techno-service-icon">
+								<i class="flaticon flaticon-code"></i>
+							</div>
+							<div class="techno-service-title">
+								<h2>APPS INTERFACE DESIGN</h2>
+								<p>Ignite user engagement and elevate your app's appeal with Paetin Inc.'s exceptional App Interface Design. Our team of skilled designers specializes in crafting intuitive and
+									visually captivating interfaces that leave a lasting impression..</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="techno-sinlge-service-box white">
+					<div class="techno-service-box-inner">
+						<div class="techno-service-content">
+							<div class="techno-service-icon">
+								<i class="flaticon-pen"></i>
+							</div>
+							<div class="techno-service-title">
+								<h2>WEBSITE DEVELOPMENT</h2>
+								<p>With a deep understanding of the latest web technologies and design trends, we craft websites that not only look visually appealing but also provide seamless user experiences. From responsive layouts to intuitive navigation, we ensure that every
+									aspect of your website is optimized for maximum engagement and conversions..</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="techno-sinlge-service-box white">
+					<div class="techno-service-box-inner">
+						<div class="techno-service-content">
+							<div class="techno-service-icon">
+								<i class="flaticon-chat"></i>
+							</div>
+							<div class="techno-service-title">
+								<h2>UI/UX</h2>
+								<p>Paetin Inc.'s UI/UX Design approach goes beyond aesthetics. We conduct thorough research and user testing to understand your target audience, their needs, and pain points. By aligning our designs with user expectations, we create interfaces that not only look
+									visually appealing but also provide meaningful and effortless
+									interactions..</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End techno service Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start techno about Area -->
+<!--==================================================-->
+<div class="about-area style-three" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="techno-about-thumb-box">
+					<div class="techno-about-thumb-3">
+						<img src="{% static 'assets/images/about/about1.html' %}" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="row about-left">
+					<div class="col-lg-12">
+						<div class="dreamit-section-title style-four white">
+							<h5>About Us</h5>
+							<h1>PAETIN IS THE BEST SOFTWARE</h1>
+							<h1>AGENCY <span class="color2">IN THE WORLD</span></h1>
+							<p class="pt-text">We are Paetin Inc., a dynamic and
+								innovative digital agency. With a passion for excellence,
+								we create impactful solutions that drive success in the digital
+								realm. From website development to UI/UX design, we empower
+								businesses to thrive in the ever-evolving digital
+								landscape. Partner with us to unlock your full digital
+								potential and embark on a remarkable digital journey.
+
+					 </p>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="prossess-ber-plugin style-two upper4">
+							<span class="prosses-bar">Web UI/UX Design</span>
+							<div id="bar1" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill" data-percentage="90"></span>
+							</div>
+							<span class="prosses-bar">Apps Development</span>
+							<div id="bar2" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill" data-percentage="70"></span>
+							</div>
+							<span class="prosses-bar">SEO & Digital Marketing</span>
+							<div id="bar3" class="barfiller">
+								<div class="tipWrap">
+									<span class="tip"></span>
+								</div>
+								<span class="fill" data-percentage="75"></span>
+							</div>
+							<div class="about-button">
+								<a href="{% url 'contact' %}">Contsct Us <i class="fas fa-check-square"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-middle">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="widget-widgets-company-info white">
+					<div class="techno-logo">
+						<a class="logo_img" href="index.html" title="techno">
+							<img src="{% static 'assets/images/logoo.png' %}" alt="" />
+						</a>
+					</div>
+					<div class="company-info-desc">
+						<p>Empowering Digital Success</p>
+					</div>
+					<div class="company_icon">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-pinterest-p"></i></a>
+					</div>
+				</div>
+			</div>
+
+
+<!--==================================================-->
+<!-- Start scrollup section Area -->
+<!--==================================================-->
+<!-- scrollup section -->
+<div class="scroll-area">
+	<div class="top-wrap">
+		<div class="go-top-btn-wraper">
+			<div class="go-top go-top-button">
+				<i class="fas fa-arrow-up"></i>
+				<i class="fas fa-arrow-up"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- Start scrollup section Area -->
+<!--==================================================-->
+
+<!--==================================================-->
+<!-- Start Search Popup Area -->
+<!--==================================================-->
+<div class="search-popup">
+	<button class="close-search style-two"><span class="flaticon-multiply"><i class="far fa-times-circle"></i></span></button>
+	<button class="close-search"><i class="fas fa-arrow-up"></i></button>
+	<form method="post" action="#">
+		<div class="form-group">
+			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</form>
+</div>
+<!--==================================================-->
+<!-- Start Search Popup Area -->
+<!--==================================================-->
+
+	<!-- jquery js -->
+	<script src="{% static 'assets/js/vendor/jquery-3.2.1.min.js' %}"></script>
+	<!-- bootstrap js -->
+	<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+	<!-- carousel js -->
+	<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+	<!-- counterup js -->
+	<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+	<!-- waypoints js -->
+	<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+	<!-- wow js -->
+	<script src="{% static 'assets/js/wow.js' %}"></script>
+	<!-- imagesloaded js -->
+	<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+	<!-- venobox js -->
+	<script src="{% static 'venobox/venobox.js' %}"></script>
+	<!-- ajax mail js -->
+	<script src="{% static 'assets/js/ajax-mail.js' %}"></script>
+	<!--  animated-text js -->
+	<script src="{% static 'assets/js/animated-text.js' %}"></script>
+	<!-- venobox min js -->
+	<script src="{% static 'venobox/venobox.min.js' %}"></script>
+	<!-- isotope js -->
+	<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+	<!-- jquery nivo slider pack js -->
+	<script src="{% static 'assets/js/jquery.nivo.slider.pack.js' %}"></script>
+	<!-- jquery meanmenu js -->
+	<script src="{% static 'assets/js/jquery.meanmenu.js' %}"></script>
+	<script src="{% static 'assets/js/popper.min.js"></script>
+	<!-- jquery scrollup js -->
+	<script src="{% static 'assets/js/jquery.scrollUp.js' %}"></script>
+	<!-- slick js -->
+	<script src="{% static 'assets/js/theme.js' %}"></script>
+	<!-- slick js -->
+	<script src="{% static 'assets/js/slick.js' %}"></script>
+	<!-- slick js -->
+	<script src="{% static 'assets/js/slick.min.js' %}"></script>
+	<!-- jquery js -->
+	<script src="{% static 'assets/js/jquery.barfiller.js' %}"></script>
+	<!-- jquery js -->
+	<script>
+    $(document).ready(function(){
+	$('#bar1').barfiller({ duration: 7000 });
+	$('#bar2').barfiller({ duration: 7000 });
+	$('#bar3').barfiller({ duration: 7000 });
+	});
+	</script>
+	<!--faq jquery-->
+    <script>
+	(function($) {
+	    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+	    $('.accordion a').click(function(j) {
+	        var dropDown = $(this).closest('li').find('p');
+
+	        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+	        if ($(this).hasClass('active')) {
+	            $(this).removeClass('active');
+	        } else {
+	            $(this).closest('.accordion').find('a.active').removeClass('active');
+	            $(this).addClass('active');
+	        }
+
+	        dropDown.stop(false, true).slideToggle();
+
+	        j.preventDefault();
+	    });
+	})(jQuery);
+	</script>
+	<!--jave script -->
+    <script>
+        $(window).on('scroll', function () {
+            var scrolled = $(window).scrollTop();
+            if (scrolled > 300) $('.go-top').addClass('active');
+            if (scrolled < 300) $('.go-top').removeClass('active');
+        });
+
+        $('.go-top').on('click', function () {
+            $("html, body").animate({
+                scrollTop: "0"
+            }, 1200);
+        });
+    </script>
+    <!--jave script -->
+    <script>
+	"use strict";
+    jQuery(document).ready(function (o) {
+        0 < o(".offset-side-bar").length &&
+            o(".offset-side-bar").on("click", function (e) {
+                e.preventDefault(), e.stopPropagation(), o(".cart-group").addClass("isActive");
+            }),
+            0 < o(".close-side-widget").length &&
+                o(".close-side-widget").on("click", function (e) {
+                    e.preventDefault(), o(".cart-group").removeClass("isActive");
+                }),
+            0 < o(".navSidebar-button").length &&
+                o(".navSidebar-button").on("click", function (e) {
+                    e.preventDefault(), e.stopPropagation(), o(".info-group").addClass("isActive");
+                }),
+            0 < o(".close-side-widget").length &&
+                o(".close-side-widget").on("click", function (e) {
+                    e.preventDefault(), o(".info-group").removeClass("isActive");
+                }),
+            o("body").on("click", function (e) {
+                o(".info-group").removeClass("isActive"), o(".cart-group").removeClass("isActive");
+            }),
+            o(".xs-sidebar-widget").on("click", function (e) {
+                e.stopPropagation();
+            }),
+            0 < o(".xs-modal-popup").length &&
+                o(".xs-modal-popup").magnificPopup({
+                    type: "inline",
+                    fixedContentPos: !2,
+                    fixedBgPos: !0,
+                    overflowY: "auto",
+                    closeBtnInside: !2,
+                    callbacks: {
+                        beforeOpen: function () {
+                            this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
+                        },
+                    },
+                });
+    });
+    </script>
+</body>
+
+<!-- Mirrored from html.ditsolution.net/techno-digital-agency/landing-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 May 2023 14:42:54 GMT -->
+</html>

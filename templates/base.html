@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Paetin Software</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="{% static 'assets/images/fav-icon/icon.png' %}">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css" media="all" />
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}" type="text/css" media="all" />
+	<!-- nivo-slider CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/nivo-slider.css' %}" type="text/css" media="all" />
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" type="text/css" media="all" />
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/animated-text.css' %}" type="text/css" media="all" />
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}" type="text/css" media="all" />
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}" type="text/css" media="all" />
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/theme-default.css' %}" type="text/css" media="all" />
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/meanmenu.min.css' %}" type="text/css" media="all" />
+	<!-- Main Style CSS -->
+	<link rel="stylesheet"  href="{% static 'assets/css/style.css' %}" type="text/css" media="all" />
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}" type="text/css" media="all" />
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="{% static 'venobox/venobox.css' %}" type="text/css" media="all" />
+	<!-- widget CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/widget.css' %}" type="text/css" media="all" />
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" type="text/css" media="all" />
+	<!-- slick slider CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}" type="text/css" media="screen" />
+    <!-- slick slider CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}" type="text/css" media="screen" />
+
+
+
+
+</head>
+<body>
+
+
+<!-- loder -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loder-section left-section"></div>
+      <div class="loder-section right-section"></div>
+    </div>
+
+
+<!--==================================================-->
+<!-- Start techno Main Menu Area -->
+<!--==================================================-->
+<div id="sticky-header" class="techno_nav_manu style-two">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-3">
+				<div class="logo">
+					<a class="logo_img" href="index.html" title="Paetin">
+						<img src="{% static 'assets/images/logoo.png' %}" alt="" />
+					</a>
+					<a class="main_sticky" href="{% url 'home' %}" title="Paetin">
+						<img src="{% static 'assets/images/logoo.png' %}" alt="astute" />
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<nav class="techno_menu text-center">
+
+					<ul class="nav_scroll">
+
+						<li class="nav-item active">
+                  		<a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
+                		</li>
+
+						<li><a href="#Company">Company <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub-menu">
+								<li><a href="{% url 'mission' %}">Mission & Vission</a></li>
+								<li><a href="{% url 'contact' %}">Contact Us</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{% url 'service' %} ">Services </a>
+						</li>
+
+
+
+
+				</nav>
+			</div>
+			<div class="lines style-three">
+				<div class="line"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- techno Mobile Menu Area -->
+<div class="mobile-menu-area d-sm-block d-md-block d-lg-none ">
+	<div class="mobile-menu">
+		<nav class="techno_menu">
+			<ul class="nav_scroll">
+				<li class="nav-item active">
+                  		<a class="nav-link" href="{% url 'index' %} "> Home <span class="sr-only">(current)</span></a>
+                		</li>
+
+						<li><a href="#Company">Company <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub-menu">
+								<li><a href="{% url 'mission' %} ">Mission & Vission</a></li>
+								<li><a href="{% url 'contact' %} ">Contact Us</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="{% url 'service' %} ">Services </a>
+						</li>
+
+
+			</ul>
+		</nav>
+	</div>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
+<!--==================================================-->
